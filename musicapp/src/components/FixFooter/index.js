@@ -2,6 +2,10 @@ import {  useState } from "react";
 import {
   closeIcon,
   homeIcon,
+  nextIcon,
+  playBlackIcon,
+  playGreyIcon,
+  prevIcon,
   userIcon,
 } from "../../assets";
 
@@ -25,7 +29,37 @@ const FixFooter = ({ trackIndex, audioList }) => {
 
       <div className="d-visilibity"></div>
 
-    
+    {
+      slideUp && (
+        <div className="audio-player-lg">
+          <div className="audio-cover-lg-img">
+            <img  />
+          </div>
+          <div>
+            <h2>beyond qqqqqqqqqqq</h2>
+            <h3>riz ffffffffff</h3>
+          </div>
+          <div className=".audio-player-progress flex justify-sb">
+            <input type="range"
+            min={'0'}
+            max={'100'}/>
+          </div>
+          <div className="audio-controls">
+            <button>
+              <img src={prevIcon}/>
+            </button>
+            <div>
+            <button className="play-pause-btn">
+              <img src={playBlackIcon}/>
+            </button>
+            </div>
+            <button>
+              <img src={nextIcon}/>
+            </button>
+          </div>
+        </div>
+      )
+    }
 
       {!slideUp && (
         <>
@@ -41,8 +75,8 @@ const FixFooter = ({ trackIndex, audioList }) => {
                </div>
              </div>
              <div className="mini-player-control flex">
-               <button 
-               >
+               <button >
+                <img src={playGreyIcon}/>
                </button>
                <button>
                  <img src={closeIcon} />
@@ -70,7 +104,7 @@ const FixFooter = ({ trackIndex, audioList }) => {
              </div>
            </a>
          </div>
-       /</>
+       </>
       )}     
     </div>
   );
