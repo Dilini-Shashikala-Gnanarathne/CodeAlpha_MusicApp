@@ -5,13 +5,25 @@ import SearchInput from "./components/SearchInput";
 import Tabs from "./components/Tabs";
 import "./App.css";
 import FixFooter from "./components/FixFooter";
-
+import {baseUrl} from './config.js'
 function App() {
   const [list, setList] = useState(false);
 
   const onBackButtonPress = () => {
     setList(false);
   };
+
+
+  useEffect(() => {
+    fetch(`${baseUrl}/song`)
+      .then((res) => res.json())
+      .then(appData=> {
+        console.log({appData});
+      })
+      .catch((error) => {
+        console.log({ error });
+      });
+  }, []);
 
   return (
     <div className="App m-20">
