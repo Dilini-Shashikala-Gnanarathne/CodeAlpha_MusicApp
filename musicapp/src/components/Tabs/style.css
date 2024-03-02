@@ -9,6 +9,10 @@
     border-bottom: 1px solid grey;
 }
 
+.tab-header a{
+    width: 50px;
+}
+
 .tab-header > a.active{
     border-bottom: 1px solid #83c11f;
 }
@@ -18,9 +22,7 @@
     margin-bottom: 100px;
 }
 
-/* .tab-contents .tab-content:target{
-    display: block;
-} */
+
 
 .tab-contents .tab-content.active{
     display: block;
