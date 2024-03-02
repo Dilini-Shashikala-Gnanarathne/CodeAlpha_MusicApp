@@ -7,37 +7,37 @@ const appData = {
             isActive: true,
             items: [
                 {
-                    label: 'POP',
-                    key: 'pop',
+                    label: 'Top Charts',
+                    key: 'Top Charts',
                     bgImage: ''
                 },
                 {
-                    label: 'Urban',
-                    key: 'urban',
+                    label: 'Moods',
+                    key: 'Moods',
                     bgImage: ''
                 },
                 {
-                    label: 'World',
-                    key: 'world',
+                    label: 'New Releases',
+                    key: 'New Releases',
                     bgImage: ''
                 },
                 {
-                    label: 'Others',
-                    key: 'others',
+                    label: 'Personalized ',
+                    key: 'Personalized Playlists',
                     bgImage: ''
                 },
                 {
-                    label: 'Cloud Rap',
+                    label: 'Instrumental',
                     bgImage: ''
                 },
                 {
-                    label: 'Groove',
-                    key: 'groove',
+                    label: 'Trending Now',
+                    key: 'Trending Now',
                     bgImage: ''
                 },
                 {
-                    label: 'Electronica',
-                    key: 'electronica',
+                    label: 'Regional Music',
+                    key: 'Regional Music',
                     bgImage: ''
                 }
             ]
