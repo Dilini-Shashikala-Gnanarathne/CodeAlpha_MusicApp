@@ -4,7 +4,18 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: #000;
+    background: #050b12;
+}
+
+.audio-ls-header{
+    cursor: pointer;
+  
+}
+
+.audio-ls-item{
+    margin-left: 100px;
+    margin-top: 40px;
+    cursor: pointer;
 }
 
 .audio-ls-item .audio-img{
@@ -17,9 +28,10 @@
 .audio-ls-item .audio-img img{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .audio-info{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .audio-info p:last-child{
