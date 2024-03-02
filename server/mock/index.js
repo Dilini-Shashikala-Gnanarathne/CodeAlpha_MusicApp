@@ -1,10 +1,38 @@
 const appData = {
     appQuote: 'Find the best music for your code',
     homeScreen: {
+        
+        freelicense: {
+            label: 'Free License',
+            id: '#free-license',
+            isActive: true,
+            items: [
+                {
+                    label: 'Rock',
+                    key: 'rock',
+                    bgImage: ''
+                },
+                {
+                    label: 'Relaxing',
+                    key: 'jazz',
+                    bgImage: ''
+                },
+                {
+                    label: 'Cinematic',
+                    bgImage: '',
+                    key: 'cinematic'
+                },
+                {
+                    label: 'Accoustic',
+                    key: 'accoustic',
+                    bgImage: ''
+                }
+            ]
+        },
         commercial: {
             label: 'Commercial',
             id: '#commercial',
-            isActive: true,
+            isActive: false,
             items: [
                 {
                     label: 'Top Charts',
@@ -42,33 +70,6 @@ const appData = {
                 }
             ]
         },
-        freelicense: {
-            label: 'Free License',
-            id: '#free-license',
-            isActive: false,
-            items: [
-                {
-                    label: 'Rock',
-                    key: 'rock',
-                    bgImage: ''
-                },
-                {
-                    label: 'Jazz',
-                    key: 'jazz',
-                    bgImage: ''
-                },
-                {
-                    label: 'Cinematic',
-                    bgImage: '',
-                    key: 'cinematic'
-                },
-                {
-                    label: 'Accoustic',
-                    key: 'accoustic',
-                    bgImage: ''
-                }
-            ]
-        }
     }
 }
 
