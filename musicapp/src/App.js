@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="App m-20">
       <Header />
-      <h2 className="mtb-20 app-quote">Find the best music for your code</h2>
+      <h2 className="mtb-20 app-quote">Find the best songs</h2>
       <SearchInput />
       <Tabs onItemSelect={onItemSelect} tabData={appData["homeScreen"]} />
       {list && (

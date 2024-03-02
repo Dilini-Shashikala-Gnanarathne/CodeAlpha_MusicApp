@@ -33,7 +33,7 @@ body{
   margin: 0 20px;
 }
 .mtb-20{
-  margin: 20px 0;
+  margin: 20px 33% 20px;
 }
 .m-10{
   margin: 10px;
@@ -82,7 +82,8 @@ body{
 }
 
 .app-quote{
-  font-size: 25px;
+  font-size: 50px;
+
 }
 
 li{

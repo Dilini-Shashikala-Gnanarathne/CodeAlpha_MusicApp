@@ -1,18 +1,19 @@
-.fix-footer{
+.fix-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 10px 20px;
-    background: grey;
-    background: url(./../../assets/footer-bg-1.jpg);
-    background-size: cover;
+    background-image: radial-gradient(circle, #1e0fe3 1px, #0d0909 1px);
+    background-size: 25px 25px; 
     background-position: center;
+    background-color: #000; /* Set the background color to black */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    /* height: 50px; */
     transition: height .2s ease-out;
 }
+
+
 
 .fix-footer._h60{
     height: 60px;

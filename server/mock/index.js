@@ -1,5 +1,5 @@
 const appData = {
-    appQuote: 'Find the best music for your code',
+    appQuote: 'Find the best songs',
     homeScreen: {
         
         freelicense: {
@@ -50,24 +50,11 @@ const appData = {
                     bgImage: ''
                 },
                 {
-                    label: 'Personalized ',
-                    key: 'Personalized Playlists',
-                    bgImage: ''
-                },
-                {
-                    label: 'Instrumental',
-                    bgImage: ''
-                },
-                {
                     label: 'Trending Now',
                     key: 'Trending Now',
                     bgImage: ''
                 },
-                {
-                    label: 'Regional Music',
-                    key: 'Regional Music',
-                    bgImage: ''
-                }
+               
             ]
         },
     }
