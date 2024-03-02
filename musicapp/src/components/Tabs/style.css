@@ -1,20 +1,22 @@
-.tab-header > a{
+.tab-header > a {
     flex: 1;
     display: inline-block;
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     border-bottom: 1px solid grey;
+    
 }
+
 
 .tab-header a{
     width: 50px;
 }
 
 .tab-header > a.active{
-    border-bottom: 1px solid #83c11f;
+    border-bottom: 1px solid #0a0654;
 }
 
 .tab-contents .tab-content{
@@ -31,7 +33,13 @@
 .tab-contents .tab-content .content-item{
     width: 120px;
     height: 120px;
-    background: #333;
+    background-image: radial-gradient(circle, #000 1px, #2ae9f3 1px);
+    background-size: 10px 10px; 
+    background-position: center;
+    background-color: #e8e3e3; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: height .2s ease-out;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
