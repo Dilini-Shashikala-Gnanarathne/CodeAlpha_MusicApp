@@ -29,7 +29,7 @@
 .tab-contents .tab-content .content-item{
     width: 120px;
     height: 120px;
-    background: grey;
+    background: #333;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
