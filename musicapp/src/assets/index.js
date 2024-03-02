@@ -10,6 +10,7 @@ import playBlackIcon from "./play-black.png";
 import pauseBlackIcon from "./pause-black.png";
 import nextIcon from "./next.png";
 import prevIcon from "./next.png";
+import logo from "./logo.png";
 
 export {
     searchIcon,
@@ -23,5 +24,6 @@ export {
     playBlackIcon,
     pauseBlackIcon,
     nextIcon,
-    prevIcon
+    prevIcon,
+    logo
 }
