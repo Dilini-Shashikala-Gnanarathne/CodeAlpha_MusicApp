@@ -30,34 +30,20 @@ const appData = {
             ]
         },
         
-        download: {
-            label: 'Download',
-            id: '#download',
+        addsong: {
+            label: 'Add Song',
+            id: '#addsong',
             isActive: false,
             items: [
                 {
-                    label: 'Top Charts',
-                    key: 'Top Charts',
+                    label: 'Google',
+                    key: 'Google',
                     bgImage: '',
-                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
                 },
                 {
-                    label: 'Moods',
-                    key: 'Moods',
+                    label: 'YouTube',
+                    key: 'YouTube',
                     bgImage: '',
-                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
-                },
-                {
-                    label: 'New Releases',
-                    key: 'New Releases',
-                    bgImage: '',
-                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
-                },
-                {
-                    label: 'Trending Now',
-                    key: 'Trending Now',
-                    bgImage: '',
-                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
                 },
                
             ]
