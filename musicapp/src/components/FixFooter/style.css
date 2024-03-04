@@ -158,3 +158,8 @@
 .audio-controls .play-pause-btn img{
     width: 15px;
 }
+
+
+.volume-control span{
+    margin-left: 25px;
+}

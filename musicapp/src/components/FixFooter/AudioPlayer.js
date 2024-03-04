@@ -55,16 +55,18 @@ const AudioPlayer = ({
       </div>
 
       {/* Volume Control */}
-      <div className="volume-control">
-        <input
-          type="range"
-          min="0"
-          max="1"
-          step="0.01"
-          value={volume}
-          onChange={onChangeVolume}
-        />
-      </div>
+<div className="volume-control">
+  <input
+    type="range"
+    min="0"
+    max="1"
+    step="0.01"
+    value={volume}
+    onChange={onChangeVolume}
+  />
+  <span className="volume-value">{(volume * 100).toFixed(0)}%</span>
+</div>
+
 
       <div className="audio-controls flex justify-sb">
         <button onClick={prevTrack}>
