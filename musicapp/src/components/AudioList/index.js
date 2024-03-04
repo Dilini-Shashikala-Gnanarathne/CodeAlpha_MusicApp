@@ -33,7 +33,7 @@ const AudioList = ({ onBackButtonPress, audioList, onTrackSelect }) => {
       ) : (
         <button className="buttonDownload">
         <a href="https://www.google.com/search?client=firefox-b-d&q=download+song">
-          Download Song
+        No Audio Available
           <img src={down} alt="Download Icon" className="download-icon" />
         </a>
       </button>
