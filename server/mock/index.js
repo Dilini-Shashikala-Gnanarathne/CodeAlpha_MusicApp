@@ -2,9 +2,9 @@ const appData = {
     appQuote: 'Find the best songs',
     homeScreen: {
         
-        freelicense: {
-            label: 'Free License',
-            id: '#free-license',
+        myPlaylist: {
+            label: 'My Playlist',
+            id: '#myPlaylist',
             isActive: true,
             items: [
                 {
@@ -29,30 +29,35 @@ const appData = {
                 }
             ]
         },
-        commercial: {
-            label: 'Commercial',
-            id: '#commercial',
+        
+        download: {
+            label: 'Download',
+            id: '#download',
             isActive: false,
             items: [
                 {
                     label: 'Top Charts',
                     key: 'Top Charts',
-                    bgImage: ''
+                    bgImage: '',
+                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
                 },
                 {
                     label: 'Moods',
                     key: 'Moods',
-                    bgImage: ''
+                    bgImage: '',
+                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
                 },
                 {
                     label: 'New Releases',
                     key: 'New Releases',
-                    bgImage: ''
+                    bgImage: '',
+                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
                 },
                 {
                     label: 'Trending Now',
                     key: 'Trending Now',
-                    bgImage: ''
+                    bgImage: '',
+                    url:'https://www.google.com/search?client=firefox-b-d&q=download+song'
                 },
                
             ]

@@ -126,6 +126,7 @@ const FixFooter = ({ trackIndex, audioList }) => {
           isPlaying={isPlaying}
           nextTrack={nextTrack}
           prevTrack={prevTrack}
+          audioRef={audioRef} // Pass the audioRef to AudioPlayer
         />
       )}
 
@@ -135,7 +136,7 @@ const FixFooter = ({ trackIndex, audioList }) => {
             <div className="mini-player flex justify-sb align-center mtb-10">
               <div className="flex align-center">
                 <div className="artist-cover-img">
-                  <img src={`${baseUrl}/${avatar}`} />
+                  <img src={`${baseUrl}/${avatar}`} alt={`${artist} - ${title}`} />
                 </div>
                 <div className="mini-player-info mlr-10">
                   <p>{title}</p>
@@ -145,13 +146,13 @@ const FixFooter = ({ trackIndex, audioList }) => {
               <div className="mini-player-control flex">
                 <button onClick={() => setIsPlaying(!isPlaying)}>
                   {isPlaying ? (
-                    <img src={pauseGreyIcon} />
+                    <img src={pauseGreyIcon} alt="Pause" />
                   ) : (
-                    <img src={playGreyIcon} />
+                    <img src={playGreyIcon} alt="Play" />
                   )}
                 </button>
                 <button>
-                  <img src={closeIcon} />
+                  <img src={closeIcon} alt="Close" />
                 </button>
               </div>
             </div>
@@ -161,7 +162,7 @@ const FixFooter = ({ trackIndex, audioList }) => {
           <div className="navigation-menu flex justify-evenly">
             <a>
               <div>
-                <img src={homeIcon} />
+                <img src={homeIcon} alt="Home" />
               </div>
               <div>
                 <span>Home</span>
@@ -169,7 +170,7 @@ const FixFooter = ({ trackIndex, audioList }) => {
             </a>
             <a>
               <div>
-                <img src={userIcon} />
+                <img src={userIcon} alt="Profile" />
               </div>
               <div>
                 <span>Profile</span>
