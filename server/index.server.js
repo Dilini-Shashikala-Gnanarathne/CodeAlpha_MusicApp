@@ -50,7 +50,7 @@ app.get(`/song`, (req, res) => {
             }            
         })
     }
-    appData['freelicense'] = songData
+    appData['myPlaylist'] = songData
 
     res.status(200).json({ appData });
 });

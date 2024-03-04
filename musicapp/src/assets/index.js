@@ -11,6 +11,7 @@ import pauseBlackIcon from "./pause-black.png";
 import nextIcon from "./next.png";
 import prevIcon from "./next.png";
 import logo from "./logo.png";
+import down from './down.png';
 
 export {
     searchIcon,
@@ -25,5 +26,6 @@ export {
     pauseBlackIcon,
     nextIcon,
     prevIcon,
-    logo
+    logo,
+    down,
 }

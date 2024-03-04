@@ -1,4 +1,4 @@
-import { backIcon } from "../../assets";
+import { backIcon , down } from "../../assets";
 import { baseUrl } from "../../config";
 import "./style.css";
 
@@ -7,12 +7,12 @@ const AudioList = ({ onBackButtonPress, audioList, onTrackSelect }) => {
   return (
     <div className="audio-ls p-20">
       <div onClick={onBackButtonPress} className="audio-ls-header">
-        <img src={backIcon} />
+        <img src={backIcon} alt="Back" />
       </div>
 
-      <ul className="mtb-10">
-        {audioList.length ? (
-          audioList.map((item, index) => (
+      {audioList.length ? (
+        <ul className="mtb-10">
+          {audioList.map((item, index) => (
             <li
               onClick={() => onTrackSelect(index)}
               key={index}
@@ -20,7 +20,7 @@ const AudioList = ({ onBackButtonPress, audioList, onTrackSelect }) => {
             >
               <div className="audio-ls-item flex align-center ptb-5">
                 <div className="audio-img">
-                  <img src={`${baseUrl}/${item.avatar}`} />
+                  <img src={`${baseUrl}/${item.avatar}`} alt="Audio Cover" />
                 </div>
                 <div className="audio-info mlr-10">
                   <p>{item.title}</p>
@@ -28,13 +28,17 @@ const AudioList = ({ onBackButtonPress, audioList, onTrackSelect }) => {
                 </div>
               </div>
             </li>
-          ))
-        ) : (
-          <p style={{ textAlign: "center", fontSize: "16px" }}>
-            No Audio Available
-          </p>
-        )}
-      </ul>
+          ))}
+        </ul>
+      ) : (
+        <button className="buttonDownload">
+        <a href="https://www.google.com/search?client=firefox-b-d&q=download+song">
+          Download Song
+          <img src={down} alt="Download Icon" className="download-icon" />
+        </a>
+      </button>
+      
+      )}
     </div>
   );
 };
