@@ -7,9 +7,6 @@ const Header = (props) => {
       <div className="logo">
         <img src={logo} alt="Dil" />
       </div>
-      <div>
-        <img src={searchIcon} alt="Search" />
-      </div>
     </header>
   );
 };
