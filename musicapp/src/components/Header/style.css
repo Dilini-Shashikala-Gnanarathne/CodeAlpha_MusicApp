@@ -1,7 +1,7 @@
-.header{background-image: radial-gradient(circle, #1e0fe3 1px, #0d0909 1px);
+.header{background-image: radial-gradient(circle, #1e0fe3 1px, black 1px);
 background-size: 25px 25px; 
 background-position: center;
-background-color: #f7f1f1; /* Set the background color to black */
+background-color: black; /* Set the background color to black */
 border-top-right-radius: 20px;
 border-top-left-radius: 20px;
 transition: height .2s ease-out;}

@@ -31,7 +31,7 @@ const appData = {
         },
         
         addsong: {
-            label: 'Add Song',
+            label: 'Add Songs',
             id: '#addsong',
             isActive: false,
             items: [

@@ -67,29 +67,21 @@ const FixFooter = ({ trackIndex, audioList }) => {
   useEffect(() => {
 
     if(currentTrackIndex !== -1){
-       // if a music is already playing then we will stop it and assign currently selected one
       audioRef.current.pause();
-      // new audio initialize
       audioRef.current = new Audio(audioSrc);
-      //playing initialize audio
       audioRef.current.play();
-      // set isPlaying true when music started playing
       setIsPlaying(true);
-      // start progress of the audio
       startTimer();
     }
    
 
-    //setCurrentTrackIndex(trackIndex);
   }, [currentTrackIndex]);
 
   useEffect(() => {
-    // if user press play button then we will play the currently selected music
     if (isPlaying) {
       audioRef.current.play();
       startTimer();
     } else {
-      // if user press pause button then we will pause the currently playing music
       audioRef.current.pause();
       clearInterval(intervalRef.current);
     }
@@ -126,7 +118,7 @@ const FixFooter = ({ trackIndex, audioList }) => {
           isPlaying={isPlaying}
           nextTrack={nextTrack}
           prevTrack={prevTrack}
-          audioRef={audioRef} // Pass the audioRef to AudioPlayer
+          audioRef={audioRef} 
         />
       )}
 
