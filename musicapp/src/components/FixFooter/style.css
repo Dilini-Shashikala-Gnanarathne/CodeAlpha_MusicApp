@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     padding: 10px 20px;
-    background-image: radial-gradient(circle, #1e0fe3 1px, #0d0909 1px);
+    background-image: radial-gradient(circle, #1e0fe3 1px, black 1px);
     background-size: 25px 25px; 
     background-position: center;
     background-color: #000; /* Set the background color to black */
